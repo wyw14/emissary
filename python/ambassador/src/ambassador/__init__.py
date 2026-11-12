@@ -13,6 +13,18 @@
 # limitations under the License
 
 from .cache import Cache
+from .compile_closure import (
+    BUNDLE_FORMAT,
+    ClosureError,
+    ClosureFormatError,
+    ClosureLimitError,
+    ClosureRoot,
+    ManifestSecretHandler,
+    ReplayResult,
+    export_compile_closure,
+    import_compile_closure,
+    manifest_file_checker,
+)
 from .config import Config
 from .diagnostics import Diagnostics
 from .envoy import EnvoyConfig
@@ -28,4 +40,14 @@ __all__ = (
     "Version",
     "EnvoyConfig",
     "Diagnostics",
+    "BUNDLE_FORMAT",
+    "ClosureError",
+    "ClosureFormatError",
+    "ClosureLimitError",
+    "ClosureRoot",
+    "ManifestSecretHandler",
+    "ReplayResult",
+    "export_compile_closure",
+    "import_compile_closure",
+    "manifest_file_checker",
 )
